@@ -61,7 +61,7 @@ const MemberContent = () => {
   return (
     <div className='member-Page' style={{height:'520px'}}>
       <div style={{ marginTop: '11px' , marginRight:'12px'}} className="filter-container">
-        <h2></h2>
+        
         {/* Search Input */}
         <div className='controls'>
           <div className='search-box' style={{ backgroundColor: '#fff' }}>

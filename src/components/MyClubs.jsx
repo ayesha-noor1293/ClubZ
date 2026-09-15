@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { GrFormPrevious } from "react-icons/gr";
 import { GrPersonalComputer } from "react-icons/gr";
 import { GiCampCookingPot } from "react-icons/gi";
-import { FaPlus  } from "react-icons/fa";
+
 import { MdNavigateNext } from "react-icons/md";
 
 const MyClubsCard = () => {

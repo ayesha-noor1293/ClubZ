@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './tables.css'; // Import the CSS file for styling
 import { BiSearch } from 'react-icons/bi';
 
-import { Link } from 'react-router-dom';
+
 const RequestContent = () => {
   // Sample data for the table
   const initialData = [
@@ -87,7 +87,7 @@ const RequestContent = () => {
   return (
     <div className='member-Page' style={{height:'520px'}}>
       <div style={{ marginTop: '11px' , marginRight:'12px' }} className="filter-container">
-        <h2></h2>
+        
         {/* Search Input */}
         <div className='controls'>
           <div className='search-box' style={{ backgroundColor: '#fff' }}>
