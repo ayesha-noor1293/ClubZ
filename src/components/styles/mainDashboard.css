@@ -1,0 +1,29 @@
+
+.main-content .middle-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: 8px;
+  margin-right: 350px;
+  margin-top: -1px;
+  padding: 10px;
+  
+}
+
+.middle-section .bg{
+  background-color: #ECF0F1;
+}
+
+ .right-section {
+ margin-left: -352px;
+ margin-top: -14px;
+ margin-right:3342px ;
+ margin-bottom:10px;
+ background-color: #ECF0F1;
+ border-radius: 20px;
+ box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+ max-width: 100%;
+ width: 500px;
+ 
+}

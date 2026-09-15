@@ -1,0 +1,56 @@
+.whole-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns for the first row */
+  grid-template-rows: auto; /* Rows will adjust based on content height */
+  gap: 20px; /* Space between grid items */
+  background-color: transparent; /* Example background color */
+  padding: 20px; /* Optional padding */
+  overflow-x: auto; 
+  height:480px;
+  margin-top: -20px;
+
+}
+
+.first-row {
+  grid-column: span 2; /* Span both columns for the first row */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width cards in the first row */
+  gap: 20px; /* Space between the cards */
+}
+
+.sec-row,
+.third-row {
+  grid-column: span 2; /* Span the full width of the grid for second and third rows */
+}
+
+.stats, .adminprofile, .pendin-requests, .memberdata {
+  background-color: #ECF0F1; /* Example background color for cards */
+  padding: 20px; /* Card padding */
+  border-radius: 10px; /* Rounded corners for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  border: 1px solid #ddd;
+  margin-left: -14px;
+  margin-top: -12px;
+
+}
+
+.pendin-requests, .memberdata {
+  grid-column: span 2; /* Ensure the card takes up full width in second and third rows */
+  width:1030px
+}
+
+
+.stats{
+  height: 250px;
+  width:720px; 
+   
+}
+
+.adminprofile{
+  height: 250px;
+  width:260px;
+  background-color: #ECF0F1;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+

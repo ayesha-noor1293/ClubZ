@@ -1,0 +1,226 @@
+
+/*my profile*/
+
+  
+  .admin-detail h3 {
+    
+    color: #2C3E50; /* Dark Gray */
+  }
+  .admin-detail .tp{
+    color: grey;
+  }
+
+  .admin-detail {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 280px;
+    margin-left: -10px;
+    height: 225px;
+    margin-top: 6px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: #fff; /* Example background color */
+}
+
+.admin-detail img {
+    background-color: blue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; /* Ensures the image is square */
+    object-fit: cover; /* Ensures the image fits nicely inside the container */
+}
+
+.admin-detail p {
+    margin-top: 10px; /* Add some space between the image and text */
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust the font size */
+    color: #2C3E50; /* Example text color */
+}
+
+.admin-detail .username{
+    color: #2C3E50;
+}
+
+.admin-detail .details{
+    flex-direction: column;
+}
+
+/*stats*/
+.top-stats{
+  margin-top: -15px;
+}
+.stats-dashboard {
+  display: flex;
+  position: relative;
+  overflow: hidden; /* Hides any overflow content */
+  width: 750px;
+  justify-content: flex-start;
+  margin-left: -15px;
+  margin-top: 5px;
+  height: 280px; /* Make sure this height is enough to fit the content */
+}
+
+.stats-scroll-container {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  padding-bottom: 0; /* Remove padding to avoid unnecessary height */
+  height: 240px; /* Make sure this fits within the parent height */
+  width: 780px;
+  scroll-behavior: smooth;
+}
+
+.stats-div {
+  display: flex;
+  width: 100%;
+}
+
+.stats-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  height: 180px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0; /* Prevents cards from shrinking */
+}
+
+.stats-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.stats-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.chart-labels {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.chart-labels ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.chart-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.total-members,
+.total-requests {
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+/*Requests*/
+
+.req-whole{
+  height:290px;
+}
+.request-table table {
+  width: 100%;
+  
+}
+.req-table{
+ height: 265px;
+ margin-left: -13px;
+ width:1053px;
+ margin-top: -11px;
+  overflow-y: auto;
+}
+.request-table th {
+  white-space: nowrap; /* Prevent wrapping */
+  padding: 8px;
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  padding: 8px; /* Add some padding */
+  border-bottom: 1px solid #ddd; /* Add border to table cells */
+}
+
+.request-table td {
+  padding: 8px; /* Add some padding */
+}
+
+/* Optional: Add styles for headers to improve visibility */
+.request-table th {
+  background-color: #2C3E50; 
+    font-weight: bold; /* Bold text */
+    padding: 15px;
+}
+
+.req-btn {
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  height:30px;
+  border-radius: 28px;
+  width:70px;
+  cursor: pointer;
+  background-color: #3498DB; 
+  color: white;
+  
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.req-btn-R {
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  height:30px;
+  border-radius: 28px;
+  width:70px;
+  cursor: pointer;
+  background-color: #E74C3C; 
+  color: white;
+  
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.req-btn-A {
+  border: none;
+  padding: 5px 10px;
+  margin: 5px;
+  height:30px;
+  border-radius: 28px;
+  width:70px;
+  cursor: pointer;
+  background-color: green; 
+  color: white;
+  
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.req-btn:hover,.req-btn-A:hover,.req-btn-R:hover  {
+  opacity: 0.8;
+}
+
+.content-table{
+  height: 480px;
+  margin-left: 13px;
+  margin-top: -11px;
+  overflow-y: auto;
+  background-color: #fff;
+}

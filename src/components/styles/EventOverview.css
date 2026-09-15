@@ -1,0 +1,66 @@
+.event-overview {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: auto;
+  }
+  
+  .event-banner {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .event-banner h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .event-description, .event-agenda, .registration-details, .key-speakers, .event-materials, 
+  .event-policies, .contact-information, .related-events, .social-sharing, .comments-section {
+    margin-bottom: 20px;
+  }
+  
+  .event-agenda ul, .event-materials ul, .related-events ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-agenda ul li, .event-materials ul li, .related-events ul li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .registration-details button, .social-sharing .social-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .registration-details button:hover, .social-sharing .social-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .key-speakers .speaker, .comments-section .comment {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .comments-section a, .related-events a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .comments-section a:hover, .related-events a:hover {
+    text-decoration: underline;
+  }
+  

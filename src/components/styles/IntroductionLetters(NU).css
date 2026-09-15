@@ -1,0 +1,47 @@
+/* src/Table.css */
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .data-table th, .data-table td {
+    border: none;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .data-row {
+    text-align: center;
+  }
+  
+  .view-button {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .view-button:hover {
+    background-color: #e7f0ff;
+  }
+  
+  .delete-button {
+    padding: 5px 10px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  

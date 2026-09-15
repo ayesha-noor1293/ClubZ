@@ -1,0 +1,73 @@
+.CD-card {
+    margin-top: -15px;
+    padding: 20px;
+    margin-left: 12px;
+    overflow-y: auto;
+    width:1040px;
+    height:490px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Container for club and event cards */
+ .CD-club-card-container {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row; /* Aligns cards horizontally */
+    gap: 15px; /* Space between cards */
+    flex-wrap: wrap; /* Ensures cards wrap to the next line if they overflow */
+}
+
+.CD-club-card {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: row; /* Keeps the content inside the card aligned horizontally */
+    width: 300px; /* Adjust width to control the card size */
+}
+
+.CD-club-card .a {
+    
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-right:15px ;
+    
+}
+
+.CD-club-info {
+    flex: 1;
+}
+
+.CD-club-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2C3E50; /* Primary Color */
+}
+
+.CD-club-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.CD-club-card button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 28px;
+    margin-left: 165px;
+    background-color: #3498DB; /* Secondary Color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.CD-club-card button:hover {
+    background-color: #2C3E50; /* Darker shade of Secondary Color */
+}

@@ -1,0 +1,62 @@
+/* src/ViewPage.css */
+.view-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .letter-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .letter-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  .section p {
+    margin: 5px 0;
+  }
+  
+  .attachment-link, .action-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .attachment-link:hover, .action-link:hover {
+    text-decoration: underline;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
