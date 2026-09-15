@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { BiSearch } from 'react-icons/bi';
 import { FaRegBell } from 'react-icons/fa';
-import { RiLogoutCircleRLine } from 'react-icons/ri';
+import { RiLogoutCircleRLine, RiDashboardLine } from 'react-icons/ri';
 import './styles/admindashboardmain.css';
 import notificationsData from './notificationDataAdmin'; // Ensure this is the correct path
 
 const AdminHeaderMain = () => {
+  const navigate = useNavigate();
   const getInitialNotifications = () => {
     const savedNotifications = localStorage.getItem('notifications');
     if (savedNotifications) {
@@ -63,6 +66,15 @@ const AdminHeaderMain = () => {
             <div className='notification-count'>{notificationList.length}</div>
           )}
         </div>
+
+         <div 
+          className='logout' 
+          onClick={() => navigate('/')}
+          title="Member Dashboard"
+        >
+          <RiDashboardLine className='icon' />
+        </div>
+
         <div className='logout' onClick={handleLogoutClick}>
           <RiLogoutCircleRLine className='icon' />
         </div>

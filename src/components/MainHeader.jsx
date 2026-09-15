@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { BiSearch } from 'react-icons/bi';
 import { FaRegBell } from 'react-icons/fa';
-import { RiLogoutCircleRLine } from 'react-icons/ri';
+import { RiLogoutCircleRLine,  RiDashboardLine  } from 'react-icons/ri';
 import './styles/MainHeader.css';
 import notificationsData from './notificationsData'; // Ensure this is the correct path
 
 const MainHeader = () => {
+  const navigate = useNavigate();
+
   const getInitialNotifications = () => {
     const savedNotifications = localStorage.getItem('notifications');
     if (savedNotifications) {
@@ -57,12 +61,22 @@ const MainHeader = () => {
           <input type='text' placeholder='Search anything here...' />
           <BiSearch className='icon' />
         </div>
-        <div className='notify' onClick={handleBellClick}>
-          <FaRegBell className='icon' />
-          {notificationList.length > 0 && (
-            <div className='notification-count'>{notificationList.length}</div>
-          )}
-        </div>
+
+        
+       <div className='notify' onClick={handleBellClick}> 
+  <FaRegBell className='icon' /> 
+  {notificationList.length > 0 && ( 
+    <div className='notification-count'>{notificationList.length}</div> 
+  )} 
+</div>
+
+        <div 
+  className='logout' 
+  onClick={() => navigate('/Admin')}
+  title="Admin Dashboard"
+>
+  <RiDashboardLine className='icon' />
+</div>
         <div className='logout' onClick={handleLogoutClick}>
           <RiLogoutCircleRLine className='icon' />
         </div>
